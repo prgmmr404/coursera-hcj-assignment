@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 22px;
+}
+
+.row {
+  margin-top: 32px;
+  width: 100%;
+}
+
+.box-one {
+  float: left;
+  width: 30%;
+  height: inherit;
+  background-color: lightgray;
+  border: 2px solid black;
+  margin-right: 10px;
+  margin-left: 36px;
+}
+
+.box-two {
+  float: left;
+  width: 30%;
+  height: inherit;
+  background-color: lightgray;
+  border: 2px solid black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.box-three {
+  float: left;
+  width: 30%;
+  height: inherit;
+  background-color: lightgray;
+  border: 2px solid black;
+  margin-left: 10px;
+}
+
+h3#chicken {
+  float: right;
+  left: 275px;
+  background-color: pink;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  width: 150px;
+  text-align: center;
+}
+
+h3#beef {
+  float: right;
+  left: 275px;
+  background-color: indianred;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  color: white;
+  width: 150px;
+  text-align: center;
+}
+
+h3#sushi {
+  float: right;
+  left: 275px;
+  background-color: khaki;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  width: 150px;
+  text-align: center;
+}
+
+p {
+  padding: 32px 10px 10px 10px;
+}
+
+@media (min-width: 992px) {
+  .box-one, .box-two, .box-three {
+    float: left;
+    width: 30%;
+  }
+
+  .box-one {
+    margin-left: 36px;
+    margin-right: 1%;
+  }
+
+  .box-two {
+    margin-right: 1%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .box-one, .box-two{
+    float: left;
+    width: 45%;
+  }
+
+  .box-one {
+    margin-left: 4%;
+    margin-right: 1%;
+  }
+
+  .box-two {
+    margin-left: 1%;
+    margin-right: 3%;
+  }
+
+  .box-three {
+    float: left;
+    width: 92%;
+    margin-left: 4%;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .box-one, .box-two, .box-three {
+    float: left;
+    width: 85%;
+    margin-bottom: 16px;
+    margin-left: 8%;
+  }
+}
